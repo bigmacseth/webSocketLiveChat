@@ -4,7 +4,7 @@ import random
 from string import ascii_uppercase
 
 chat_app = Flask(__name__)
-chat_app.config["SECRET_KEY"] = "asdfjkl;"
+chat_app.config["SECRET_KEY"] = ""
 socketio = SocketIO(chat_app, cors_allowed_origins="*", async_mode='eventlet')
 
 rooms = {}
